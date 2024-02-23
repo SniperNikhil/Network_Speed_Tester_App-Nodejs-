@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Speed Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+         <a href="#" id="back">&#8592; Back</a>
+        {{!-- <video autoplay loop muted plays-inline>
+            <source src="fireanime.mp4" type="video/mp4">
+        </video> --}}
+        <div class="headbutton">
+           
+            <div class="title">
+                
+                <label for="">Network Speed Tester App</label>
+            </div>
+            <div class="abcenter">
+                <div class="hello" id="start">
+                    <div class="outercircle"></div>
+                    <div class="button" id="startButton">
+                        <label for="">Start</label>
+                    </div>
+                </div>
+                <div class="du" id="end">
+                    <div class="ab">
+                        <div class="downloadspeed"></div>
+                        <div class="rt">
+                            <label for="" class="tex">Download Speed</label>
+                            <label for="" class="num" id="numLabel">24</label>
+                        </div>
+                    </div>
+                    <div class="bc">
+                        <div class="uploadspeed"></div>
+                        <div class="rt">
+                            <label for="" class="tex">Upload Speed</label>
+                            <label for="" class="num" id="numLabel1">24</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="note"><label for="">Note : The Output is shown in mbps</label></div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

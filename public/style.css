@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    background-color: #141526;
+    /* background-color: aqua; */
+
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.headbutton {
+    width: 60vw;
+    height: 80vh;
+    /* background-color: rgb(35, 34, 32); */
+    padding: 20px;
+
+    border-radius: 20px;
+}
+
+.title {
+    width: 100%;
+    height: 8vh;
+    font-size: 50px;
+    font-weight: bold;
+    color: aliceblue;
+    text-align: center;
+
+    
+}
+
+.abcenter {
+    height: 72vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hello {
+    width: 15vw;
+    height: 15vw;
+}
+
+.outercircle {
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    border: 2px solid rgb(39, 176, 165);
+    border-radius: 50%;
+    transition: 2s ease-in-out;
+    animation: bordercircle 4s linear infinite;
+    cursor: pointer;
+}
+
+.button {
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    border: 4px solid rgb(39, 176, 165);
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(39, 176, 165);
+    font-size: 35px;
+    cursor: pointer;
+
+    label {
+        cursor: pointer;
+    }
+
+}
+
+.button:hover {
+    background-color: rgba(0.059, 0.063, 0.114, 0.5);
+}
+
+@keyframes bordercircle {
+    0% {
+        scale: 1;
+        /* box-shadow: 0 0 5px rgb(39, 176, 165); */
+    }
+
+    25% {
+        scale: 1.3;
+        opacity: 0;
+    }
+
+    50% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1.3;
+        opacity: 0;
+        /* box-shadow: 0 0 20px rgb(39, 176, 165); */
+    }
+}
+
+.du {
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+    /* background-color: aqua; */
+
+    display: grid;
+    /* grid-template-columns: 25vw 25vw;
+    grid-template-rows: 50vh 50vh; */
+    grid-template-columns: 25vw 25vw;
+    grid-template-rows: 25vw 25vw;
+    gap: 30px;
+    display: none;
+    z-index: 2;
+}
+
+.ab,
+.bc {
+    position: relative;
+}
+
+.downloadspeed {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border: 13px solid rgb(39, 176, 165);
+    border-top: 0 solid #141526;
+    border-bottom: 0 solid #141526;
+    border-radius: 50%;
+    color: aliceblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rt {
+
+    border: 0;
+    border-radius: 50%;
+    color: aliceblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .tex {
+        font-size: 25px;
+        margin-bottom: 30px;
+        margin-top: 70px;
+    }
+
+    .num {
+        font-size: 11vw;
+    }
+}
+
+
+
+
+.uploadspeed {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border: 13px solid rgb(39, 176, 165);
+    border-radius: 50%;
+    border-top: 0 solid #141526;
+    border-bottom: 0 solid #141526;
+    /* background-color: red; */
+    color: aliceblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: red; */
+    .tex {
+        font-size: 25px;
+
+    }
+
+    .num {
+        margin-bottom: 30px;
+        font-size: 11vw;
+    }
+
+    animation: spin 2s linear infinite;
+}
+
+a {
+    display: none;
+    width: 100%;
+    position: absolute;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    align-self: flex-start;
+    text-align: left;
+    padding:30px;
+}
+
+a:hover {
+    color: aqua;
+}
+
+.note{
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    align-self: flex-end;
+    padding: 20px;
+    font-size: 25px;
+}
